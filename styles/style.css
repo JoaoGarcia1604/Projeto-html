@@ -7,10 +7,33 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     box-sizing: border-box;
     background-color: black;
     color: white;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 17%;
+    
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho__menu__link {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #22D4FD;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    font-size: 25px;
+    color: #5F9EA0;
 }
 
 .titulo-destaque {
@@ -19,7 +42,7 @@ body {
 
 .apresentacao {
     
-    margin: 10% 16%;
+    padding: 7.3% 22%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,6 +84,9 @@ body {
 
 .apresentacao__links__botao {
     /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     width: 378px;
     text-align: center;
     border: 2px solid #22D4FD;
@@ -73,4 +99,25 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.apresentacao__links__botao:hover {
+
+    background-color: #272727;
+    width: 385px;
+    
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    background-color: #22D4FD;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
 /* display flex agrupa, fontes precisam ser atualizadas, usar gap para separar,*/
+/* ctrl + k + c = comentário */
