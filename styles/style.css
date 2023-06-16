@@ -13,6 +13,8 @@
 /* uso de variáveis como no java
 declaração no root */
 
+/*   rem é a estilização de tamanho de fonte que é relativa ao navegador... 16px = 1rem  */
+
 * {
     margin:0;
     padding:0;  
@@ -38,13 +40,13 @@ body {
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .cabecalho__menu__link:hover {
-    font-size: 25px;
+    font-size: 1.56rem;
     color: #5F9EA0;
 }
 
@@ -58,11 +60,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
     
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -70,14 +73,18 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-principal);
 }
 
 .apresentacao__conteudo__paragrafo {
-    font-size: 22px;
+    font-size: 1.37rem;
     font-family: var(--fonte-secundaria);
     
+}
+
+.apresentacao__imagem {
+    width: 50%; 
 }
 
 .apresentacao__links {
@@ -91,7 +98,7 @@ body {
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao__links__botao {
@@ -99,11 +106,11 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 378px;
+    width: 70%;
     text-align: center;
     border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
@@ -126,7 +133,13 @@ body {
     color: var(--cor-primaria);
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: 15px;
+    font-size: 0.94rem;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
 }
 
 
